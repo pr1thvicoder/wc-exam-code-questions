@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form-validation" onsubmit="return validateForm()">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            email = document.getElementById('email').value
+            if (!email.includes("@")) {
+                alert('Missing @ in email input')
+            }
+        }
+    </script>
+</body>
+
+</html>
